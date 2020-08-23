@@ -28,8 +28,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## 참고
 
-Use //eslint-disable-next-line to ignore the next line.
-Use /* eslint-disable */ to ignore all warnings in a file.
+Use //eslint-disable-next-line to ignore the next line.  
+Use /* eslint-disable */ to ignore all warnings in a file.  
 경고 뜰 때 무시할 수 있는 설정 법
 ```
 # config\index.js 파일 
