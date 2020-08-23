@@ -1,6 +1,6 @@
 # trello
 
-> trello webpage project
+> trello web page project
 
 ## Project Setup
 
