@@ -1,15 +1,20 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import VueRouter from 'vue-router'
+import Board from '../components/Board.vue'
+import Home from '../components/Home.vue'
+import Login from '../components/Login.vue'
+import NotFound from '../components/NotFound.vue'
+import Card from '../components/Card.vue'
+Vue.use(VueRouter)
 
-Vue.use(Router)
-
-export default new Router({
+export default new VueRouter({
+  mode: 'history',
   routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
+    { path: '/', component: Home },
+    { path: '/b/:bid', component: Board, children: [
+      { path:'c/:cid', component: Card }
+    ] },
+    { path: '/login', component:Login },
+    { path: '*', component:NotFound }
   ]
 })
