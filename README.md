@@ -23,3 +23,10 @@ Use /* eslint-disable */ to ignore all warnings in a file.
 # config\index.js 파일 
 useEslint: false
 ```
+
+## lecture-vue-trello-server
+> git clone https://github.com/jeonghwan-kim/lecture-vue-trello-server.git
+> cd lecture-vue-trello-server
+> npm i
+> npm dev run 
+> localhost:3000 가면 Api List 볼 수 있음
