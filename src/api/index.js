@@ -19,7 +19,7 @@ const request = (method, url, data) => {
     throw result.response
   })
 }
-export const setAuthInHeader = token => {
+export const setAuthInHeader = token => { //토큰 값을 받아와 토큰이 있으면 설정 없으면 null로 설정
   axios.defaults.headers.common['Authorization'] = token ? `Bearer ${token}` : null;
 }
 const {token} = localStorage
